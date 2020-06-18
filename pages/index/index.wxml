@@ -1,0 +1,16 @@
+<view class="container">
+<view >
+<view class="item" wx:for='{{items}}' wx:for-index="idx"  wx:key="id" wx:for-item="item">
+  <image class="item-image" src="{{item.cover}}" data-id="{{idx}}" bindtap="detail"></image>
+  <view class="item-content">
+    <view class="content-main">
+        <view class="content-title">{{item.setname}}</view>
+<!--         <view class="content-date">{{item.createdate}}</view> -->
+    </view>
+<!--     <view class="content-desc"> 
+      <view>{{item.desc}}</view>
+    </view> -->
+  </view>
+</view>
+</view>
+</view>

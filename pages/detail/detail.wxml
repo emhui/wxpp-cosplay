@@ -1,0 +1,21 @@
+<view class="item">
+<view class="item-image-wrapper">
+    <swiper indicator-dots="true" class="item-swiper">
+    <block wx:for="{{item.pics}}" wx:key="*this">
+      <swiper-item>
+      <image mode="scaleToFill" class="item-image" src="{{item}}"></image>
+      </swiper-item>
+    </block>  
+    </swiper>
+
+  </view>
+  <view class="item-content">
+    <view class="content-main">
+        <view class="content-title">{{item.setname}}</view>
+        <view class="content-date">{{item.createdate}}</view>
+    </view>
+    <view class="content-desc"> 
+      <view>{{item.desc}}</view>
+    </view>
+  </view>
+</view>
